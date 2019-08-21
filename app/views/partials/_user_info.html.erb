@@ -1,0 +1,5 @@
+<div>
+  <span>Welcome <%= current_user.email %></span>
+  <a href="/movies/new">Share a movie</a>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+</div>

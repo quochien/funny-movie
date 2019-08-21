@@ -1,0 +1,7 @@
+<%= form_for @movie do |f| %>
+  <label>Youtube URL:</label>
+  <%= f.text_field :youtube_url, required: true %>
+  <%= f.text_field :title %>
+  <%= f.text_area :description %>
+  <%= f.submit 'Share'  %>
+<% end %>

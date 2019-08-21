@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :movie do
-    title "MyString"
-    description "MyText"
-    youtube_url "MyString"
-    user ""
+    title "Movie Title"
+    description "Movie Description"
+    youtube_url Faker::Internet.url
+    user
   end
 end

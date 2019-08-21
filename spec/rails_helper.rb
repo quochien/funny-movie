@@ -59,8 +59,17 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
+  config.include FactoryBot::Syntax::Methods
+
   #type: controller only run on controller test
   config.include Devise::Test::ControllerHelpers, type: :controller
   #type: feature only run on feature test
   config.include Devise::Test::IntegrationHelpers, type: :feature
+
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
 end

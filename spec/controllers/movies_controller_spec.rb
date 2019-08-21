@@ -7,10 +7,10 @@ RSpec.describe MoviesController, type: :controller do
 
   describe 'GET new' do
     context 'without signed in user' do
-      it 'redirects to signin page' do
+      it 'redirects to home page' do
         get :new
 
-        expect(response).to redirect_to(new_user_session_path)
+        expect(response).to redirect_to(root_path)
       end
     end
 
@@ -38,12 +38,12 @@ RSpec.describe MoviesController, type: :controller do
     end
 
     context 'without signed in user' do
-      it 'redirects to signin page' do
+      it 'redirects to home page' do
         expect do
           post :create, params: movie_params
         end.to_not change { Movie.count }
 
-        expect(response).to redirect_to(new_user_session_path)
+        expect(response).to redirect_to(root_path)
       end
     end
 

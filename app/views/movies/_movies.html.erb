@@ -1,1 +1,6 @@
 <%= render partial: 'movies/movie', collection: movies %>
+<div class="row">
+  <div class="col-md-12 col-sm-12 text-center">
+    <%= will_paginate movies, renderer: BootstrapPagination::Rails %>
+  </div>
+</div>

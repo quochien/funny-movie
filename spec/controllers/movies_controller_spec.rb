@@ -63,7 +63,7 @@ RSpec.describe MoviesController, type: :controller do
           expect(movie.youtube_url).to eq('https://www.youtube.com/watch?v=sX3KeP7v7Kg')
 
           expect(response).to redirect_to(root_path)
-          expect(flash[:success]).to eq('You have been shared a movie!')
+          expect(flash[:success]).to eq('You have just shared a movie!')
         end
       end
 

@@ -66,6 +66,7 @@ RSpec.configure do |config|
   config.include Devise::Test::ControllerHelpers, type: :view
   #type: feature only run on feature test
   config.include Devise::Test::IntegrationHelpers, type: :feature
+  # config.include Features::SessionHelpers, type: :feature
 
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|

@@ -20,10 +20,10 @@ RSpec.feature 'Register', type: :feature do
   scenario 'invalid user email' do
     user = create(:user, password: 'password')
 
-    login_with user.email, 'password'
+    login_with user.email, 'password1'
 
-    expect(page).to have_content('Share a movie')
-    expect(page).to have_content('Logout')
+    expect(page).to_not have_content('Share a movie')
+    expect(page).to have_content('Login / Register')
   end
 
   def login_with(email, password)

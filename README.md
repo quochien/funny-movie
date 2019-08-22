@@ -1,4 +1,4 @@
-# README
+# Funny App
 
 ## Dependencies
 * Ruby &#x2265; 2.5.1
@@ -15,5 +15,6 @@ To run the test:
 
 Heroku deployment:
 
-`git push heroku master`
-`heroku run rails db:migrate`
+    $ git push heroku master
+
+    $ heroku run rails db:migrate

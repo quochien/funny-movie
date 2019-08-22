@@ -11,7 +11,7 @@ RSpec.describe HomeController, type: :controller do
       get :index
 
       expect(response).to render_template(:index)
-      expect(assigns(:movies)).to eq([movie1, movie2])
+      expect(assigns(:movies)).to eq([movie2, movie1])
     end
   end
 end

@@ -56,6 +56,12 @@ RSpec.describe MoviesController, type: :controller do
             post :create, params: movie_params
           end.to change { Movie.count }.by(1)
 
+          movie = Movie.last
+          expect(movie.user).to eq(user)
+          expect(movie.title).to eq('Stars war')
+          expect(movie.description).to eq('War of stars')
+          expect(movie.youtube_url).to eq('https://www.youtube.com/watch?v=sX3KeP7v7Kg')
+
           expect(response).to redirect_to(root_path)
           expect(flash[:success]).to eq('You have been shared a movie!')
         end

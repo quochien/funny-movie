@@ -1,6 +1,5 @@
 <%= form_for(:user, url: session_path(:user)) do |f| %>
-  <%= f.text_field :email, placeholder: 'email', required: true %>
+  <%= f.email_field :email, placeholder: 'email', required: true %>
   <%= f.password_field :password, placeholder: 'password', required: true %>
-  <%= f.submit 'Login' %>
-  <%= link_to 'Register', new_user_registration_path %>
+  <%= f.submit 'Login / Register' %>
 <% end %>

@@ -7,16 +7,19 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <script>
+    <!-- <script>
       if (window.location.href.indexOf('/users/sign_in') > -1) {
         window.location.href = "/";
       }
-    </script>
+    </script> -->
   </head>
 
   <body>
     <div class="container">
       <%= render "partials/header" %>
+      <% flash.each do |key, value| %>
+        <p class="text-warning"><%= value %></p>
+      <% end %>
       <%= yield %>
     </div>
 

@@ -63,6 +63,7 @@ RSpec.configure do |config|
 
   #type: controller only run on controller test
   config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Devise::Test::ControllerHelpers, type: :view
   #type: feature only run on feature test
   config.include Devise::Test::IntegrationHelpers, type: :feature
 

@@ -8,11 +8,21 @@
 .movie-title {
   color: red;
 }
+.movie-player {
+  margin-top: 15px;
+  text-align: left;
+}
+.movie-info {
+  text-align: left;
+}
 
 @media (min-width: 992px) {
   .header-user-info {
     height: 50px;
     padding-top: 25px;
+    text-align: right;
+  }
+  .movie-player {
     text-align: right;
   }
 }

@@ -1,8 +1,8 @@
 <div class="row movie">
-  <div class="col-md-6 col-sm-6 text-right">
+  <div class="col-md-5 col-md-offset-1 col-sm-6 movie-player">
     <%= render 'movies/player', youtube_id: youtube_id(movie.youtube_url) %>
   </div>
-  <div class="col-md-6 col-sm-6 text-left">
+  <div class="col-md-4 col-sm-6 movie-title">
     <h4 class="movie-title"><%= movie.title %></h4>
     <p>Shared by: <%= movie.user.email %></p>
     <p>Description:</p>

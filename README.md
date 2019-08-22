@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dependencies
+* Ruby &#x2265; 2.5.1
+* Rails &#x2265; 5.2.2
+* PostgreSQL
 
-Things you may want to cover:
+## Testing
 
-* Ruby version
+To run the test:
 
-* System dependencies
+    $ rspec -fd
 
-* Configuration
+## Deployment Guide
 
-* Database creation
+Heroku deployment:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`git push heroku master`
+`heroku run rails db:migrate`

@@ -1,0 +1,18 @@
+.header-user-info {
+  text-align: left;
+}
+
+.movie {
+  margin-bottom: 15px;
+}
+.movie-title {
+  color: red;
+}
+
+@media (min-width: 992px) {
+  .header-user-info {
+    height: 50px;
+    padding-top: 25px;
+    text-align: right;
+  }
+}

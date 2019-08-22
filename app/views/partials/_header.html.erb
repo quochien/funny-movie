@@ -1,4 +1,13 @@
-<div>
-  <h1>Funny Movies</h1>
-  <%= render user_signed_in? ? 'partials/user_info' : 'partials/signin_form' %>
+<div class="row">
+  <div class="col-md-4 col-sm-12">
+    <h1>
+      <span class="glyphicon glyphicon-home"></span>
+      Funny Movies
+    </h1>
+  </div>
+
+  <div class="col-md-8 col-sm-12 header-user-info">
+    <%= render user_signed_in? ? 'partials/user_info' : 'partials/signin_form' %>
+  </div>
 </div>
+<hr/>

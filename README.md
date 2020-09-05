@@ -1,4 +1,8 @@
-# Funny App
+# Funny Movie App
+
+This simple app allow user to share a youtube movie, and write comments on a movie.
+
+Anonymous user just can see the movie, can't share or write comment.
 
 ## Dependencies
 * Ruby &#x2265; 2.5.1

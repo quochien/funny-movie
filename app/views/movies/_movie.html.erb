@@ -7,5 +7,7 @@
     <p>Shared by: <%= movie.user.email %></p>
     <p>Description:</p>
     <p><%= movie.description %></p>
+    <%= render 'movies/comments', movie: movie %>
+    <%= render('movies/comment_form', comment: movie.comments.new) if user_signed_in? %>
   </div>
 </div>

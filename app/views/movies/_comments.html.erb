@@ -1,0 +1,4 @@
+<% movie.comments.each do |comment| %>
+  <p><%= comment.user.email %></p>
+  <p><%= comment.comment_text %></p>
+<% end %>
